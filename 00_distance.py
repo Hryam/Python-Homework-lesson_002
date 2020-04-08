@@ -3,7 +3,7 @@
 
 # Есть словарь координат городов
 
-from pprint import pprint
+#from pprint import pprint
 
 sites = {
     'Moscow': (550, 370),
@@ -34,7 +34,7 @@ distances['London']['Moscow']=Moscow_London
 distances['London']['Paris']=London_Paris
 
 
-pprint(distances)
+print(distances)
 
 
 
