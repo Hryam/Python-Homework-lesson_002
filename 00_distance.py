@@ -3,6 +3,8 @@
 
 # Есть словарь координат городов
 
+from pprint import pprint
+
 sites = {
     'Moscow': (550, 370),
     'London': (510, 510),
@@ -18,8 +20,21 @@ distances = {}
 Moscow_London = ((sites['Moscow'][0]-sites['London'][0])**2+(sites['Moscow'][1]-sites['London'][1])**2)**.5 
 London_Paris = ((sites['London'][0]-sites['Paris'][0])**2+(sites['London'][1]-sites['Paris'][1])**2)**.5
 Moscow_Paris = ((sites['Moscow'][0]-sites['Paris'][0])**2+(sites['Moscow'][1]-sites['Paris'][1])**2)**.5
-distances  = {Moscow_London, London_Paris, Moscow_Paris,}
-print(distances)
+
+distances ['Moscow']={}
+distances ['Moscow']['London'] = Moscow_London
+distances ['Moscow']['Paris'] = Moscow_Paris
+
+distances ['Paris']={}
+distances ['Paris']['Moscow']=Moscow_Paris
+distances ['Paris']['London']=London_Paris
+
+distances['London']={}
+distances['London']['Moscow']=Moscow_London
+distances['London']['Paris']=London_Paris
+
+
+pprint(distances)
 
 
 
