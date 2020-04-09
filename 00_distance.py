@@ -35,7 +35,6 @@ distances['London']['Paris']=London_Paris
 
 
 print(distances)
-
-
+вернул все взад
 
 
