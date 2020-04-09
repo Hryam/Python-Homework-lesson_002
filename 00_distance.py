@@ -35,7 +35,7 @@ distances['London']['Paris']=London_Paris
 
 
 print(distances)
-
+проверка настройки Git
 
 
 
