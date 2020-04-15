@@ -38,7 +38,7 @@ distance_of_point_1 = ((radius-point[0])**2+(radius-point[1])**2)**.5
 print ('distance_of_point_1', round(distance_of_point_1,3))
 print (distance_of_point_1<radius)
 # Аналогично для другой точки
-point_2 = (30, 30)
+point_2 = (40, 40)
 distance_of_point_2 = ((radius-point_2[0])**2+(radius-point_2[1])**2)**.5
 print ('distance_of_point_2', round (distance_of_point_2, 3))
 print (distance_of_point_2<radius)
@@ -51,6 +51,5 @@ print (distance_of_point_2<radius)
 # 77777.7777
 # False
 # False
-
 
 
